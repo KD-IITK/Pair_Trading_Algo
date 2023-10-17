@@ -50,7 +50,7 @@ def preprocess(filepath):
 
     get_score(new_df) 
 
-    new_df = new_df[new_df['eco_score'] > 0]
+    # new_df = new_df[new_df['eco_score'] > 0]
     new_df = new_df.reset_index()
     new_df.drop(['index', 'esg', 'esg_industry', 'industry', 'name'], axis = 1, inplace = True)
 
